@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mentes Capaces</title>
+    <!-- fontawesome cdn -->
+    <link 
+    rel="icon" 
+    href="./images/image.png"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    >
+    <!-- iconscout cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    >
+    <!-- css  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <style>
+      /* Ocultar una de las imágenes inicialmente */
+      #imagen2 {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- header  -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__data">
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__toggle-menu"></i>
+            <i class="ri-close-line nav__toggle-close"></i>
+          </div>
+        </div>
+
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li>
+              <a href="./index.html" class="nav__link">Inicio</a>
+            </li>
+
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link dropdown__button">
+                Temas <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <div class="dropdown__container">
+                <div class="dropdown__content">
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-flashlight-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">EXCEL DATOS</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="" class="dropdown__link">Ingresa para ver</a>
+                      </li>
+                      <li>
+                        <a href="" class="dropdown__link">datos importantes</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-heart-3-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">MIRA TU SALUD</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="" class="dropdown__link">Realiza datos interesantes</a>
+                      </li>
+                      <li>
+                        <a href="" class="dropdown__link">sobre el cuidado de tu salud</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-book-mark-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">IA's</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="" class="dropdown__link">Utiliza inteligencia artificial</a>
+                      </li>
+                      <li>
+                        <a href="" class="dropdown__link">Ayudanos a crear cosas innovadoras</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-file-paper-2-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">JUEGOS DINAMICOS</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="" class="dropdown__link">Juegos realizados</a>
+                      </li>
+                      <li>
+                        <a href="" class="dropdown__link">con muchos dias de trabajo</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!--=============== DROPDOWN 2 ===============-->
+            <li>
+              <a href="" class="nav__link">Experiencias</a>
+            </li>
+
+            <li>
+              <a href="" class="nav__link">Instrucciones</a>
+            </li>
+            <li>
+              <a href="" class="nav__link">Resultados</a>
+            </li>
+            <li>
+              <a href="./chatbot.html" class="nav__link">ChatBot</a>
+            </li>
+            <li>
+              <a href="./actividad.html" class="nav__link">Actividades</a>
+            </li>
+
+            <!--=============== DROPDOWN 3 ===============-->
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home" class="home">
+      <div class="animation-home" id="particles-js"></div>
+      <div class="container">
+        <div class="content_home">
+          <div class="left-details">
+            <h4>Bienvenidos</h4>
+            <h2>Nosotros somos</h2>
+            <h1><span id="typed"></span></h1>
+            <p>
+              Estamos aquí para ayudarte a desarrollar <br />
+              tu idea de negocio con las mejores <b>tecnologías</b> <br>
+              donde si puedes <b>imaginarlo</b>, nosotros lo <b>creamos</b>.
+            </p>
+            <a href="#Tem" class="btn">Ir ahora</a>
+          </div>
+          <img src="./images/imagenCagada.png" alt="">  
+          <div class="right-details">
+            <img src="./" alt="" />
+            <div class="img-tools">
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="left-details">
+            <!-- <img id="imagen1" src="" alt="Imagen 1" />
+            <img id="imagen2" src="" alt="Imagen 2" /> -->
+
+          <div class="right-details">
+            <h4>OMS</h4>
+            <h3>DICE LA OMS...</h3>
+            <p>
+              Según la Organización Mundial de la Salud (OMS), más de mil
+              millones de personas en el mundo viven con algún tipo de
+              discapacidad, y al menos 100 millones de ellas tienen discapacidad
+              intelectual.
+            </p>
+            <br/>
+            <a href="#Tem" class="btn">Mas informacion</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="companies">
+      <div class="container">
+        <div class="content-companies">
+          <img src="" alt=""/>
+          <img src="" alt=""/>
+          <img src="" alt=""/>
+          <img src="" alt=""/>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+      <h4 class="section-top-title" id="Tem">GRACIAS</h4>
+      <h3 class="section-title">A USTEDES PODEMOS MOSTRAR </h3>
+      <p class="section-description-title">PROJECTOS<br />INNOVADORES</p>
+      <div class="filter-portfolio">
+        <button data-filter="all" class="active-portfolio">INFORMACION</button>
+        <!-- <button data-filter=".app">FECHA</button>
+        <button data-filter=".web">LUGAR</button> -->
+        <button data-filter=".design">ORGANIZADOR</button>
+        <!-- <button data-filter=".py">APLICACION</button> -->
+      </div>
+      <div class="portfolio-container container">
+        <a
+          href="./OneshapeMain.html"
+          class="portfolio-link portfolio-item mix app"
+        >
+          <div class="portfolio-item mix app">
+            <!-- <img src="./assets/image/company/OS.png" alt=""> -->
+            <div class="item-content">
+              <span>-----</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="./Excel.html" class="portfolio-link portfolio-item mix web">
+          <div class="portfolio-item mix web">
+            <!-- <img src="" alt=""> -->
+            <div class="item-content">
+              <span>-----</span>
+            </div>
+          </div>
+        </a>
+        <a
+          href="./PowerBi.html"
+          class="portfolio-link portfolio-item mix design"
+        >
+          <div class="portfolio-item mix design">
+            <!-- <img src="" alt=""> -->
+            <div class="item-content">
+              <span>-------</span>
+            </div>
+          </div>
+        </a>
+        <a href="./redesN.html" class="portfolio-link portfolio-item mix py">
+          <div class="portfolio-item mix py">
+            <!-- <img src="" alt=""> -->
+            <div class="item-content">
+              <span>------</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section id="resume" class="resume">
+      <h4 class="section-top-title">CREA NUEVA VIDA</h4>
+      <h3 class="section-title">EN ALGO INNOVADOR</h3>
+      <p class="section-description-title">
+        ESTAS VIVIENDO AHORA, Y DEBES CREAR<br/>
+        COSAS QUE TE GUSTEN, AYUDANOS A CREECER Y TE AYUDAMOS A CREECER
+      </p>
+      <div class="container">
+
+        <div class="main-content">
+          <div id="education" class="resume-item education">
+            <h3 class="title">OPINIONES</h3>
+            <div class="box">
+              <h3>Profesionales</h3>
+              <span>Lionel messi</span>
+              <p>
+                "Creo que todos tenemos la responsabilidad de ayudar a las personas que lo necesitan.
+                La verdadera grandeza está en cómo tratamos a aquellos que son más vulnerables que nosotros."
+              </p>
+            </div>
+          </div>
+          <div id="experience" class="resume-item experience">
+            <h3 class="title">EXPERENCIA</h3>
+            <div class="box">
+              <h3>"Ayuda sobre tus dudas..."</h3>
+              <span>Anonimo.</span>
+              <p>Realmente los trabajadores de esta empresa, han hecho demasiado, saben realmente como explicar</p>
+            </div>
+          </div>
+          <div id="experience" class="resume-item experience">
+            <h3 class="title"></h3>
+            <div class="box">
+              <h3>"He mejorado mis conocimientos con cosas básicas"</h3>
+              <span>Anonimo.</span>
+              <p>
+                "Realmente, se entiende lo que se ve"
+              </p>
+            </div>
+          </div>
+          <!-- <div id="skills" class="resume-item skills">
+                    <h3 class="title">Skills</h3>
+                    <div class="skills-container">
+                        <div class="progress-bars">
+                            <div class="text">
+                                <span>html</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <span data-progress="90"></span>
+                            </div>
+                        </div>
+                        <div class="progress-bars">
+                            <div class="text">
+                                <span>css</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <span data-progress="90"></span>
+                            </div>
+                        </div>
+                        <div class="progress-bars">
+                            <div class="text">
+                                <span>javascript</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <span data-progress="70"></span>
+                            </div>
+                        </div>
+                        <div class="progress-bars">
+                            <div class="text">
+                                <span>photoshop</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <span data-progress="80"></span>
+                            </div>
+                        </div>
+                        <div class="progress-bars">
+                            <div class="text">
+                                <span>php</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <span data-progress="60"></span>
+                            </div>
+                        </div>
+                        <div class="progress-bars">
+                            <div class="text">
+                                <span>figma</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <span data-progress="75"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+          <div id="awards" class="resume-item awards">
+            <h3 class="title">DATOS</h3>
+            <div class="box">
+              <h3>AYUDANOS!</h3>
+              <span>Mas de el 50%..</span>
+              <p>
+                En algunos sistemas de evaluación de discapacidad, un porcentaje comúnmente utilizado para representar 
+                la discapacidad mental es del 50% o más, dependiendo del grado de afectación en el funcionamiento intelectual y 
+                adaptativo de la persona.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="container">
+        <div class="list">
+          <img src="./images/image.png" alt="logo" />
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./Nosotros.html">Acerca De Nosotros</a></li>
+            <li><a href="./Instrucciones.html">Instrucciones</a></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>&#169; Mentes Capaces</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/particles.min.js"></script>
+    <script src="./assets/js/particles.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="assets/js/main2.js"></script>
+    <script src="./prueba.js"></script>
+  </body>
+</html>

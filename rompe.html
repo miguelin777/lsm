@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rompecabezas de Figuras</title>
+    <!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mentes Capaces</title>
+    <!-- fontawesome cdn -->
+    <link 
+    rel="icon" 
+    href="./images/image.png"
+    >
+    <style>
+        canvas {
+            border: 2px solid black;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    >
+    <!-- iconscout cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    >
+    <!-- css  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <style>
+      /* Ocultar una de las imágenes inicialmente */
+      #imagen2 {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header  -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__data">
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__toggle-menu"></i>
+            <i class="ri-close-line nav__toggle-close"></i>
+          </div>
+        </div>
+
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li>
+              <a href="./index.html" class="nav__link">Inicio</a>
+            </li>
+
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link dropdown__button">
+                Temas <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <div class="dropdown__container">
+                <div class="dropdown__content">
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-flashlight-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">EXCEL DATOS</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="./OneshapeMain.html" class="dropdown__link">Ingresa para ver</a>
+                      </li>
+                      <li>
+                        <a href="./practicaOneshape.html" class="dropdown__link">datos importantes</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-heart-3-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">MIRA TU SALUD</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="./Excel.html" class="dropdown__link">Realiza datos interesantes</a>
+                      </li>
+                      <li>
+                        <a href="./practicaExcel.html" class="dropdown__link">sobre el cuidado de tu salud</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-book-mark-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">IA's</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="./PowerBi.html" class="dropdown__link">Utiliza inteligencia artificial</a>
+                      </li>
+                      <li>
+                        <a href="./practicaPB.html" class="dropdown__link">Ayudanos a crear cosas innovadoras</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-file-paper-2-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">JUEGOS DINAMICOS</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="./redesN.html" class="dropdown__link">Juegos realizados</a>
+                      </li>
+                      <li>
+                        <a href="./practicaRN.html" class="dropdown__link">con muchos dias de trabajo</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!--=============== DROPDOWN 2 ===============-->
+            <li>
+              <a href="./Nosotros.html" class="nav__link">Experiencias</a>
+            </li>
+
+            <li>
+              <a href="./Instrucciones.html" class="nav__link">Instrucciones</a>
+            </li>
+            <li>
+              <a href="./resultados.html" class="nav__link">Resultados</a>
+            </li>
+            <li>
+              <a href="./chatbot.html" class="nav__link">ChatBot</a>
+            </li>
+
+            <!--=============== DROPDOWN 3 ===============-->
+          </ul>
+        </div>
+      </nav>
+    </header>
+<body>
+    <h1 style="font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial */
+    font-size: 36px; /* Tamaño de la fuente */
+    color: #333; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    margin-top: 230px; /* Margen superior */
+    ">Intenta acomodar las piezas de una manera que el cuadrado esté completado!</h1>
+    <canvas style="margin-left: 35%; margin-top: 150px;" id="puzzleCanvas" width="500" height="500"></canvas> 
+    <script src="script.js"></script>
+</body>
+</html>

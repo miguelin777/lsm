@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mentes Capaces</title>
+    <!-- fontawesome cdn -->
+    <link 
+    rel="icon" 
+    href="./images/image.png"
+    >
+    <style>
+        /* General body styles for centering */
+.bod {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Container for the cards */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Individual card styles */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Content inside the card */
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Card title styles */
+.card-content h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Card description styles */
+.card-content p {
+    color: #666;
+    flex-grow: 1;
+}
+
+/* Button styles */
+.card-content button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.card-content button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    >
+    <!-- iconscout cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    >
+    <!-- css  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <style>
+      /* Ocultar una de las imágenes inicialmente */
+      #imagen2 {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header  -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__data">
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__toggle-menu"></i>
+            <i class="ri-close-line nav__toggle-close"></i>
+          </div>
+        </div>
+
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li>
+              <a href="./index.html" class="nav__link">Inicio</a>
+            </li>
+
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link dropdown__button">
+                Temas <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <div class="dropdown__container">
+                <div class="dropdown__content">
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-flashlight-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">EXCEL DATOS</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="./OneshapeMain.html" class="dropdown__link">Ingresa para ver</a>
+                      </li>
+                      <li>
+                        <a href="./practicaOneshape.html" class="dropdown__link">datos importantes</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-heart-3-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">MIRA TU SALUD</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="./Excel.html" class="dropdown__link">Realiza datos interesantes</a>
+                      </li>
+                      <li>
+                        <a href="./practicaExcel.html" class="dropdown__link">sobre el cuidado de tu salud</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-book-mark-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">IA's</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="./PowerBi.html" class="dropdown__link">Utiliza inteligencia artificial</a>
+                      </li>
+                      <li>
+                        <a href="./practicaPB.html" class="dropdown__link">Ayudanos a crear cosas innovadoras</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-file-paper-2-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">JUEGOS DINAMICOS</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="./redesN.html" class="dropdown__link">Juegos realizados</a>
+                      </li>
+                      <li>
+                        <a href="./practicaRN.html" class="dropdown__link">con muchos dias de trabajo</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!--=============== DROPDOWN 2 ===============-->
+            <li>
+              <a href="./Nosotros.html" class="nav__link">Experiencias</a>
+            </li>
+
+            <li>
+              <a href="./Instrucciones.html" class="nav__link">Instrucciones</a>
+            </li>
+            <li>
+              <a href="./resultados.html" class="nav__link">Resultados</a>
+            </li>
+            <li>
+              <a href="./chatbot.html" class="nav__link">ChatBot</a>
+            </li>
+
+            <!--=============== DROPDOWN 3 ===============-->
+          </ul>
+        </div>
+      </nav>
+    </header>
+<div class="bod">
+    <div class="card-container">
+        <div class="card">
+            <div class="card-content">
+                <img src="./images/ini.png" width="190px" alt="">
+
+                <h3>Actividad 1</h3>
+                <p>En esta actividad aprenderas a diferenciar figuras y a manipularlas en cuestion de perspectiva</p>
+                <button onclick="location.href='./rompe.html'">Ingresar</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+
+                <img src="./images/3d-business-man-wearing-vr-glasses-at-his-desk.png" width="170px" alt="">
+                <h3>Actividad 2</h3>
+                <p>Para esta actividad necesitaras de un asesor el cual te pueda ayudar a aprender LSM</p>
+                <button onclick="location.href='./lsm.html'">Ir a practicar</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="./images/mant.png" width="190px" alt="">
+
+                <h3>Actividad 3</h3>
+                <p>Aún sigue en desarrollo ésta actividad, mantente al tanto cualquier actualización!</p>
+                <button onclick="location.href='#'">Disponible mas tarde</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer>
+      <div class="container">
+        <div class="list">
+          <img src="./images/image.png" alt="logo" />
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./Nosotros.html">Acerca De Nosotros</a></li>
+            <li><a href="./Instrucciones.html">Instrucciones</a></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>&#169; Mentes Capaces</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/particles.min.js"></script>
+    <script src="./assets/js/particles.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="assets/js/main2.js"></script>
+    <script src="./prueba.js"></script>
+  </body>
+</html>
